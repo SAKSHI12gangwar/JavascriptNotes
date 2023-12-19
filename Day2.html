@@ -7,5 +7,86 @@
 </head>
 <body>
     <h1>hi</h1>
+    <!-- QUES1-What are the differences between var, let and const?? -->
+    ANS-
+    var: Used to declare variables traditionally in JavaScript. It has a function scope, meaning it's limited to the function
+    where it's declared or, if not in a function, it's globally scoped. It can be redeclared and reassigned.
+
+    let: Introduced in newer versions of JavaScript (ES6). It has a block scope, which means it's
+    limited to the block (a section of code between curly braces {}) where it's defined. Unlike var, 
+    let allows reassignment but not redeclaration within the same scope.
+
+    const: Also introduced in ES6. It's used to declare variables with a constant value that cannot
+    be reassigned. However, it doesn't mean the value is immutable (unchangeable) if it's an object
+    or an array; it means you can't reassign the variable itself to refer to a different object or 
+    array.
+
+    <!-- QUES2-Difference between undefined vs not defined vs NaN? -->
+    ANS-
+    Undefined is a value given to a variable that hasn't been assigned yet.
+    Not defined is an error that occurs when you try to use a variable that hasn't been declared
+    or is out of scope.
+    NaN is a specific value representing an invalid number resulting from operations that don't yield
+    a valid numeric value.
+
+    <!-- QUES3-What is difference between null and undefined and where to use what? -->
+    ANS-
+    Undefined: This means a variable has been declared but hasn't been assigned a value. It's the default value of variables that have been declared but not initialized. In simple terms, it's JavaScript's way of saying "this doesn't have a value yet."
+    
+    Null: It's an assignment value. It's explicitly assigned by the programmer to indicate that a variable intentionally doesn't have a value or doesn't point to any object or value.
+    
+    When to use each:
+    
+    Use undefined when a variable has been declared but not yet assigned a value (by default).
+    Use null to explicitly signify that a variable doesn't contain any valid value or doesn't point
+    to any object.
+
+    <!-- QUES4-What is execution context? -->
+    ANS-
+    Each time a function is called in JavaScript, a new execution context is created. This context
+    holds details about the function being executed, its parameters, variables defined within it, 
+    and where it sits in the overall structure of your code.
+
+    There are three types of execution contexts:
+
+    Global Execution Context: This is the default or outermost execution context. It represents
+    the environment in which the code is initially executed.
+    Function Execution Context: Created whenever a function is invoked or called.
+    Eval Execution Context: Created when code is executed inside the eval() function.
+
+    <!-- QUES5-What is use of prompt in JavaScript?  -->
+    ANS-
+    Certainly! prompt in JavaScript is a simple way to get input from users via a small dialog box
+    that pops up in the browser. It displays a message to the user, along with an input field where
+    they can type their response. Once they input something and press "OK," the value they entered
+    is returned by the prompt function. It's handy for getting quick user input, like asking for their
+    name or age, and using that input in your JavaScript code.
+
+    <!-- QUES6-Why JavaScript is Dyanmic Language? -->
+    ANS-
+    Dynamic Typing: JavaScript doesn't require you to declare the data type of a variable explicitly.
+    You can use the same variable to hold different types of data, and its type can change during the execution of the program.
+
+    Dynamic Binding: Functions and objects can be altered or extended during runtime. You can add or
+    modify properties and methods of objects even after they've been created.
+
+    Eval and Function Constructors: JavaScript provides eval(), which can execute code dynamically,
+    and Function constructors that allow the creation of functions dynamically from strings.
+
+    Prototype-based Inheritance: Objects can inherit properties and methods from other objects
+    dynamically, allowing for flexible and dynamic object-oriented programming.
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
 </body>
 </html>
